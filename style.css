@@ -1,0 +1,264 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    height: 80px;
+    z-index: 1030;
+}
+.ul {
+    margin-top: -4%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 90%;
+    margin-right: -90%;
+    font-weight: 10%;
+    margin-top: 3%;
+}
+
+ul li a{
+    font-weight: 10%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-top: 3%;
+    transition: .4s ease;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -ms-transition: .4s ease;
+    -o-transition: .4s ease;
+    font-size: large;
+    font-family: sans-serif;
+}
+ul li a:hover{
+    color:  rgb(255, 84, 4);
+}
+.navbar button{
+    margin-left: 10%;
+    margin-right: -10%;
+    height: 55px;
+    width: 100%;
+    margin-top: -5%;
+    font-size: larger;
+    color: rgb(129, 129, 129);
+    border-color:  rgb(255, 84, 4);
+}
+.navbar button:hover{
+background-color: rgb(255, 84, 4) ;
+border-color:rgb(255, 84, 4) ;
+}
+.navbar .box{
+margin-left: -20%;
+}
+.img{
+    height: 25%;
+    width:45%;
+    margin-left: 63%;
+    margin-top: -30%;
+    margin-bottom: 10%;
+}  
+.container h3{
+    font-size: 70px;
+    margin-top: 3%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.container p{
+    font-size: 18px;
+    margin-top: 15%;  
+    color:  rgb(255, 84, 4);
+}
+.container p-1{
+    font-size: 20px;
+    margin-top: 5%; 
+}
+.container button{
+    margin-top: -40%;
+    background-color: rgb(255, 84, 4);
+    color: rgb(255, 252, 252);
+    border-color:  rgb(255, 84, 4);
+}
+ 
+.box{
+    margin-left: 8%;
+    
+}
+.box p{
+    font-size: 18px;
+    margin-top: 5%;  
+    color:  rgb(255, 84, 4);
+    margin-left: 10%;
+}
+.box h3{
+    font-size: 38px;
+    margin-top: 3%;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 10%;
+    word-spacing: 5%;
+}
+.box p-1{
+    font-size: 17px;
+    margin-top: 10%; 
+   
+}
+.icons{
+    margin-left: 3%;
+    margin-top: 3%;
+    height: 5%;
+}
+.card-body{
+   margin-top: -20%;
+   margin-left: 5%;
+  }
+  .card-body p{
+    margin-left: 14%;
+    margin-top: -12%;
+  }
+
+  .card-body-2{
+    margin-top: -4%;
+    margin-left: 30%;
+   }
+   .card-body-2 p{
+    margin-left: 14%;
+    margin-top: -12%;
+  }
+  
+   .card-body-3{
+    margin-top: 5%;
+    margin-left: 5%;
+   }
+   .card-body-3 p{
+    margin-left: 14%;
+    margin-top: -12%;
+  }
+   .card-body-4{
+    margin-top: -4%;
+    margin-left: 30%;
+   }
+   .card-body-4 p{
+    margin-left: 14%;
+    margin-top: -12%;
+  }
+
+
+  .box-1{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+.box-1 p{
+    font-size: 18px;
+    margin-top: 35%;  
+    color:  rgb(255, 84, 4);
+    margin-left: -5%;
+}
+.box-1 h3{
+    font-size: 38px;
+    margin-top: 5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: -5%;
+    word-spacing: 7%;
+}
+.box-1 p-1{
+    font-size: 18px;
+    margin-top: 15%; 
+    font-family: sans-serif;  
+}
+.box-3 p-2{
+       margin-top: 10%;
+       font-size: 16px;
+       font-family: sans-serif;
+}
+.box-3 button{
+    border-color: rgb(255, 84, 4);
+    margin-top: 5%;
+    margin-left: -5%;
+    width: 25%;
+    height: 55px;
+    color: rgb(129, 129, 129);
+}
+.box-3 button:hover{
+    background-color:rgb(255, 84, 4); ;
+    border-color: rgb(255, 84, 4);;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+   
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 20%;
+}
+
+.container-fluid img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+header{
+    margin-top: 10%;
+}
+
+
+.footer-area {
+    background: #121212;
+    color: white;
+    padding: 50px 0;
+    margin-top: 5%;
+}
+.footer-logo img {
+    max-width: 150px;
+}
+.footer-area h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footer-area ul {
+    list-style: none;
+    padding: 0%;  
+}
+.footer-area ul li {
+    margin-bottom: 10px;
+    margin-left: -5%;
+    margin-right: 30%; 
+}
+.footer-area ul li a {
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    font-size: 17px;
+}
+.instagram-feed img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 5px;
+    margin-left: 10%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    gap: 1%;
+}
+
+
+
+
