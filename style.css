@@ -1,7 +1,14 @@
 *{
-     margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;  
+   }
+body{
+  
+    width: 99%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
 }
 .navbar {
     width: 100%;
@@ -13,7 +20,6 @@
     position: fixed;
     top: 0%;
     height: 80px;
-    z-index: 1030;
 }
 .ul {
     margin-top: -4%;
@@ -49,7 +55,7 @@ ul li a:hover{
     margin-left: 10%;
     margin-right: -10%;
     height: 55px;
-    width: 100%;
+    width: 90%;
     margin-top: -5%;
     font-size: larger;
     color: rgb(129, 129, 129);
@@ -99,61 +105,43 @@ margin-left: -20%;
     font-size: 18px;
     margin-top: 5%;  
     color:  rgb(255, 84, 4);
-    margin-left: 10%;
 }
 .box h3{
     font-size: 38px;
     margin-top: 3%;
     font-family: sans-serif;
     font-weight: bold;
-    margin-left: 10%;
     word-spacing: 5%;
 }
 .box p-1{
     font-size: 17px;
     margin-top: 10%; 
-   
 }
-.icons{
-    margin-left: 3%;
-    margin-top: 3%;
-    height: 5%;
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
-.card-body{
-   margin-top: -20%;
-   margin-left: 5%;
-  }
-  .card-body p{
-    margin-left: 14%;
-    margin-top: -12%;
-  }
-
-  .card-body-2{
-    margin-top: -4%;
-    margin-left: 30%;
-   }
-   .card-body-2 p{
-    margin-left: 14%;
-    margin-top: -12%;
-  }
-  
-   .card-body-3{
-    margin-top: 5%;
-    margin-left: 5%;
-   }
-   .card-body-3 p{
-    margin-left: 14%;
-    margin-top: -12%;
-  }
-   .card-body-4{
-    margin-top: -4%;
-    margin-left: 30%;
-   }
-   .card-body-4 p{
-    margin-left: 14%;
-    margin-top: -12%;
-  }
-
+.card {
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+}
+.card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 14px;
+    color: #333;
+}
 
   .box-1{
     margin-left: 10%;
@@ -193,8 +181,8 @@ margin-left: -20%;
     color: rgb(129, 129, 129);
 }
 .box-3 button:hover{
-    background-color:rgb(255, 84, 4); ;
-    border-color: rgb(255, 84, 4);;
+    background-color:rgb(255, 84, 4); 
+    border-color: rgb(255, 84, 4);
 }
 
 body {
@@ -202,34 +190,50 @@ body {
     box-sizing: border-box;
    
 }
-
-h1 {
-    font-size: 2rem;
-    margin-top: 20%;
+.text-center h6{
+    font-size: small;
+    color: rgb(255, 84, 4);
+}
+.text-center h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+.text-center button{
+    background-color: #f1f1f1;
+    color: #121212;
+    border-color: #fcfcfc ;
+    width: 10%;
+}
+.text-center button:hover{
+    background-color: rgb(255, 84, 4);
+    color: rgb(253, 251, 251);
+    border-color: rgb(255, 84, 4);
 }
 
-.container-fluid img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
-}
+
+.container-fluid-1 {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: -10%;
+
+  }
+
 header{
     margin-top: 10%;
 }
 
-
 .footer-area {
     background: #121212;
-    color: white;
+    color: rgb(248, 246, 246);
     padding: 50px 0;
-    margin-top: 5%;
+    margin-top: -25%;
 }
 .footer-logo img {
     max-width: 150px;
 }
 .footer-area h4 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .footer-area ul {
@@ -242,9 +246,11 @@ header{
     margin-right: 30%; 
 }
 .footer-area ul li a {
-    color: rgb(129, 129, 129);
+    color: rgb(180, 180, 180);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
+    transition: color 0.3s;
+
 }
 .instagram-feed img {
     width: 70px;
@@ -260,5 +266,903 @@ header{
 }
 
 
+.booking-section {
+    background: url('banner1.jpg') no-repeat center center/cover;
+    padding: 100px;
+    color: #333;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.booking-form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    width: 70%;
+    margin-left: 25%;
+}
+
+.book-text h6{
+    margin-left: 58%;
+   color:rgb(255, 84, 4) ;
+}
+.book-text h1{
+    margin-left: 55%;
+}
+.booking-form select, 
+.booking-form input, 
+.booking-form button {
+    padding: 10px;
+    border: 1px ;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    width: 20%;
+    margin-top: 5%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    height: 30%;
+}
+
+.booking-form button {
+    background-color:  rgb(255, 84, 4);
+    color: white;
+    cursor: pointer;
+    border-color:  rgb(255, 84, 4);
+}
+
+
+
+.info h6{
+    font-size: 15px;
+    letter-spacing: normal;
+    color: rgb(255, 84, 4);
+    margin-top:5%;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  
+  .info h1{
+    font-size: 45px;
+    letter-spacing: normal;
+    color: rgb(20, 20, 20);
+    margin-top: -10%;
+    text-align: center;
+  }
+  .card-body-5{
+    background-color:rgb(253, 253, 253);
+    margin-left: 70%;
+    margin-right: -70%;
+    margin-top: 5%;
+    height: 310px;
+    border-radius: 5%;
+    margin-bottom:20% ;
+}
+  .card-body-5 img{
+    height: 23%;
+    width: 45%;
+    margin-left: 30%;
+    margin-top: 15%;
+    margin-bottom: 20%;
+  }
+  .card-body-5:hover{
+    background-color:rgb(240, 237, 237);
+    border-color:  rgb(221, 219, 219);
+    
+  }
+  .card-title-5{
+    font-size: large;
+    font-family: sans-serif;
+    color: rgb(3, 3, 3);
+    margin-left: 35%;
+    margin-top: -15%;
+    }
+    .card-text-5{
+      font-size: 14px;
+      font-family: sans-serif;
+      color: rgb(87, 86, 86);
+      margin-left: 10%;
+      margin-top: 5%;
+      line-height: 200%;
+    }
+    .card-body-6{
+        background-color: rgb(253, 253, 253);
+        margin-left: 190%;
+        margin-right: -190%;
+        margin-top: -125%;
+        height: 310px;
+        border-radius: 5%;
+        margin-bottom:20% ;
+      }
+      .card-body-6 img{
+        height: 25%;
+        width: 30%;
+        margin-left: 31%;
+        margin-top: 17%;
+        margin-bottom: 20%;
+      }
+      
+      .card-body-6:hover{
+        background-color:  rgb(240, 237, 237);
+        border-color:  rgb(221, 219, 219);
+      }
+      .card-title-6{
+      font-size: large;
+      font-family: sans-serif;
+      color: rgb(3, 3, 3);
+      margin-left: 28%;
+      margin-top: -15%;
+      }
+      .card-text-6{
+        font-size: 14px;
+        font-family: sans-serif;
+        color: rgb(87, 86, 86);
+        margin-left: 6%;
+        margin-top: 5%;
+        line-height: 200%;
+      }
+      
+      
+      .card-body-7{
+        background-color:  rgb(253, 253, 253);
+        margin-left: 295%;
+        margin-right: -300%;
+        margin-top: -130%;
+        height: 310px;
+        border-radius: 5%;
+        margin-bottom:150% ;
+      }
+      .card-body-7 img{
+        height: 23%;
+        width: 45%;
+        margin-left: 25%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+      }
+      .card-body-7:hover{
+        background-color: rgb(240, 237, 237);
+        border-color: rgb(221, 219, 219);
+      }
+      .card-title-7{
+      font-size: large;
+      font-family: sans-serif;
+      color: rgb(3, 3, 3);
+      margin-left: 30%;
+      margin-top: -5%;
+      }
+      .card-text-7{
+        font-size: 14px;
+        font-family: sans-serif;
+        color:rgb(87, 86, 86);
+        margin-left: 10%;
+        margin-top: 5%;
+        line-height: 200%;
+      }
+      .booking-section-2 {
+        background: url('banner1.jpg') no-repeat center center/cover;
+        padding: 100px;
+        color: #333;
+        margin-top: -25%;
+        margin-bottom:35%;
+    }
+   
+    .input-form-2{
+     margin-left: 55%;
+     background-color: #fcfcfc;
+     border-color: #fcfcfc;
+     width: 20%;
+    }
+    .search-form-2{
+     margin-left: 75%;
+     margin-top: -2.5%;
+    }
+    .book-text-2 h6{
+        margin-left: 58%;
+       color:rgb(255, 84, 4) ;
+    }
+    .book-text-2 h2{
+        margin-left: 55%;
+    }
+    .book-text-2 p{
+        margin-left: 55%;
+    }
+
+        @media (max-width: 768px) {
+            body{
+      
+                width: 99%;
+                background-position: center;
+                background-size: cover;
+                height: 100vh; 
+            }
+            /* Navbar adjustments */
+            .navbar {
+                padding: 20px 5%;
+            }
+        
+            .navbar ul {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .navbar ul li {
+                display: inline-block;
+                margin: 0 15px;
+                font-size: 18px;
+            }
+        
+            .navbar button {
+                width: auto;
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+        
+            /* Hero section */
+            .container {
+                text-align: center;
+                padding: 50px 5%;
+            }
+            .container-2 {
+               height: 60%;
+               width: 70;
+            }
+            .container h3 {
+                font-size: 50px;
+                margin-top: 10px;
+            }
+        
+            .container p {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        
+            .container button {
+                padding: 12px 25px;
+                font-size: 18px;
+            }
+    
+            .box-1 h3{
+           margin-top: 5%;
+           width: 100%;
+          margin-left: -90%;
+           font-size: 30px;
+            }
+            
+          .box-1 img{
+           margin-top: 50%;
+          margin-left: -5%;
+          width: 100%;
+         }
+        
+            /* Image section */
+            .img {
+                width: 60%;
+                height: auto;
+                margin: 0 auto;
+                display: block;
+            }
+            .box img{
+                width: 90%;
+            }
+        
+            /* Cards adjustments */
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .card {
+                width: 90%;
+            }
+            
+            /* Booking Section */
+            .booking-form {
+                width: 90%;
+                margin: 20px auto;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        
+            .booking-form select,
+            .booking-form input,
+            .booking-form button {
+                width: 100%;
+                padding: 10px 15px;
+                font-size: 16px;
+                height: 50%;
+            }
+            .booking-form button {
+                background-color:  rgb(255, 84, 4);
+                color: white;
+                cursor: pointer;
+                border-color:  rgb(255, 84, 4);
+                font-size: small;
+            }
+    
+            .booking-section-2 {
+                background: url('banner1.jpg') no-repeat center center/cover;
+                padding: 100px;
+                color: #333;
+                margin-top: -25%;
+                margin-bottom:35%;
+            }
+           
+            .input-form-2{
+             margin-left: 55%;
+             background-color: #fcfcfc;
+             border-color: #fcfcfc;
+             width: 20%;
+            }
+            .search-form-2{
+             margin-left: 90%;
+             margin-top: -5%;
+            }
+        
+            /* Footer */
+            
+    .footer-area {
+    background: #121212;
+    color: rgb(248, 246, 246);
+    padding: 50px 0;
+    margin-top: -25%;
+    }
+    .footer-logo img {
+    max-width: 150px;
+    }
+    .footer-area h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    }
+    .footer-area ul {
+    list-style: none;
+    padding: 0%;  
+    }
+    .footer-area ul li {
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 25%; 
+    display: flex;
+    flex-direction: column;
+    }
+    .footer-area ul li a {
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    
+    }
+    .instagram-feed img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 5px;
+    margin-left: 10%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    gap: 1%;
+    }
+    
+        }
+      
+  
+    
+    @media(max-width: 425px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+          
+        body{
+          
+            width: 90%;
+            background-position: center;
+            background-size: cover;
+            height: 100vh; 
+        }
+                /* Navbar adjustments */
+                .navbar {
+                 width: 300%;
+                  
+                }
+            
+                .navbar ul {
+                    display: flex;
+                    justify-content: center;
+                   margin-left: 30%;
+                    padding: 0;
+                }
+            
+                .navbar ul li {
+                    display: inline-block;
+                    margin: 0 15px;
+                    font-size: 18px;
+                }
+            
+                .navbar button {
+                    width: auto;
+                    padding: 10px 20px;
+                    font-size: 18px;
+                }
+            
+                /* Hero section */
+                .container {
+                    text-align: center;
+                    padding: 50px 5%;
+                    margin-top: 7%;
+                }
+                .container img{
+                  margin-left: 200%;
+                  margin-top: -200%;
+                  width: 250%;
+                }
+                .container h3 {
+                    font-size: 60px;
+                    margin-top: 15px;
+                }
+            
+                .container p {
+                    font-size: 25px;
+                    margin-top: 25px;
+                }
+            
+                .container button {
+                    padding: 12px 25px;
+                    font-size: 18px;
+                }
+                .container-2 {
+                    height: 80%;
+                    width:   250%;
+                    text-align: center;
+                    font-size: large;
+                 }
+                 .container-2 img{
+                     width: 110%;
+                     height: 90%;
+                     margin-top: 10%;
+                     margin-left: 10%;
+                 }
+                 .text-center{
+                     width:300%;
+                 }
+                 .text-center button{
+                    margin-left: 10%;
+                    margin-right: 80%;
+                    border-color: #121212;
+                 }
+                 .text-center h6 , h1{
+                  margin-left: -65%;
+                 }
+                 
+                 .container-fluid-1{
+                     width: 300%;
+                 }
+                 .container-3{
+                    width: 250%;
+                    height: 605;
+                    text-align: center;
+
+                 }
+                .box-1 h3{
+               margin-top: 10%;
+               width: 100%;
+               margin-left: -5%;
+               font-size: 30px;
+                }
+                .box-1 p{
+                    margin-top: 95%;
+                    margin-left: -4%;
+                }
+                
+              .box-1 img{
+               margin-top: 50%;
+              margin-left: -5%;
+              width: 120%;
+             }
+            
+                /* Image section */
+                .img {
+                    width: 60%;
+                    height: auto;
+                    margin: 0 auto;
+                    display: block;
+                }
+            
+                /* Cards adjustments */
+                .card-body,
+                .card-body-3
+                {
+                    text-align: center;
+                    width: 50%; 
+                    height: auto;
+                    margin-left: 10%;
+                    margin-top: -18%;
+                }
+                .card-body-2,
+                .card-body-4 {
+                    text-align: center;   
+                    width: 50%;
+                    height: auto;
+                    margin-left: 75%;
+                    margin-top: 15%;
+                }
+    
+                .card-5
+                {  
+                    margin-left: -15%;
+                }
+                .card-6
+                {  
+                    margin-left: -5%;
+                }
+                .card-7
+                {  
+                   margin-top: 95%;
+                    margin-left: -115%;
+                }
+                .info h1{
+                   margin-left: 70%;
+                   margin-right: -70%;
+                }
+                .info h6{
+                    font-size: medium;
+                    margin-left: 70%;
+                   margin-right: -70%;  
+                }
+                /* Booking Section */
+                .booking-section {
+                    padding: 100px;
+                    color: #333;
+                    margin-top: 10%;
+                    margin-bottom: 5%;
+                    width: 300%;
+                }
+                .booking-form {
+                    width: 110%;
+                    margin: 20px auto;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            
+                .booking-form select,
+                .booking-form input,
+                .booking-form button {
+                    width: 100%;
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    height: 50%;
+                }
+                .booking-form button {
+                    background-color:  rgb(255, 84, 4);
+                    color: white;
+                    cursor: pointer;
+                    border-color:  rgb(255, 84, 4);
+                    font-size: small;
+                }
+    
+                .booking-section-2 {
+                    background: url('banner1.jpg') no-repeat center center/cover;
+                    padding: 100px;
+                    color: #333;
+                    margin-top: -25%;
+                    margin-bottom:35%;
+                    width:300%;
+                }
+               
+                .input-form-2{
+                 margin-left: 55%;
+                 background-color: #fcfcfc;
+                 border-color: #fcfcfc;
+                 width: 20%;
+                }
+                .search-form-2{
+                 margin-left: 80%;
+                 margin-top: -3%;
+                }
+            
+                /* Footer */
+                
+    .footer-area {
+        background: #121212;
+        color: rgb(248, 246, 246);
+        padding: 50px 0;
+        margin-top: -25%;
+        width: 300%;
+    }
+    .footer-logo img {
+        max-width: 150px;
+        margin-top: -7%;
+        margin-left: -70%;
+    }
+    .footer-area h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-area ul {
+        list-style: none;
+        padding: 0%;  
+    }
+    .footer-area ul li {
+        margin-bottom: 10px;
+        margin-left: -5%;
+        margin-right: 30%; 
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+    }
+    .footer-area ul li a {
+        color: rgb(180, 180, 180);
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+    
+    }
+    .instagram-feed img {
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        border-radius: 5px;
+        margin-left: 10%;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        gap: 1%;
+    }
+    
+    }
+                     
+
+
+
+
+    @media (max-width: 375px) {
+        /* Navbar adjustments */
+        .navbar {
+         width: 173.5%;
+          
+        }
+    
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .navbar ul li {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+    
+        .navbar button {
+            width: auto;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+    
+        /* Hero section */
+        .container {
+            text-align: center;
+            padding: 50px 5%;
+            margin-top: 7%;
+        }
+        .container img{
+          margin-left: 150%;
+          margin-top: -90%;
+        }
+        .container h3 {
+            font-size: 50px;
+            margin-top: 10px;
+        }
+    
+        .container p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    
+        .container button {
+            padding: 12px 25px;
+            font-size: 18px;
+        }
+        .container-2 {
+            height: 60%;
+            width:   150%;
+         }
+         .container-2 img{
+             width: 110%;
+             height: 90%;
+             margin-top: 10%;
+             margin-left: 10%;
+         }
+         .text-center{
+             width: 173.5%;
+         }
+         .text-center h6 , h1{
+          margin-left: -47%;
+         }
+         
+         .container-fluid-1{
+             width: 173.5%;
+         }
+         .container-3{
+            width: 150%;
+            height: 605;
+         }
+        .box-1 h3{
+       margin-top: 5%;
+       width: 100%;
+       margin-left: -50%;
+       font-size: 30px;
+        }
+        .box-1 p{
+            margin-top: -5%;
+            margin-left: -4%;
+        }
+        
+      .box-1 img{
+       margin-top: 50%;
+      margin-left: -5%;
+      width: 120%;
+     }
+    
+        /* Image section */
+        .img {
+            width: 60%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    
+        /* Cards adjustments */
+        .card-body,
+        .card-body-3
+        {
+            text-align: center;
+            width: 50%; 
+            height: auto;
+            margin-left: 6%;
+            margin-top: 12%;
+        }
+        .card-body-2,
+        .card-body-4 {
+            text-align: center;   
+            width: 50%;
+            height: auto;
+            margin-left: 80%;
+            margin-top: -14%;
+        }
+
+        .card-5
+        {  
+            margin-left: -35%;
+        }
+        .card-6
+        {  
+            margin-left: -35%;
+        }
+        .card-7
+        {  
+           margin-top: 90%;
+            margin-left: -150%;
+        }
+        /* Booking Section */
+        .booking-section {
+            padding: 100px;
+            color: #333;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            width: 173.5%;
+        }
+        .booking-form {
+            width: 110%;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        .booking-form select,
+        .booking-form input,
+        .booking-form button {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 16px;
+            height: 50%;
+        }
+        .booking-form button {
+            background-color:  rgb(255, 84, 4);
+            color: white;
+            cursor: pointer;
+            border-color:  rgb(255, 84, 4);
+            font-size: small;
+        }
+
+        .booking-section-2 {
+            background: url('banner1.jpg') no-repeat center center/cover;
+            padding: 100px;
+            color: #333;
+            margin-top: -25%;
+            margin-bottom:35%;
+            width: 173.5%;
+        }
+       
+        .input-form-2{
+         margin-left: 55%;
+         background-color: #fcfcfc;
+         border-color: #fcfcfc;
+         width: 20%;
+        }
+        .search-form-2{
+         margin-left: 90%;
+         margin-top: -5%;
+        }
+    
+        /* Footer */
+        
+.footer-area {
+background: #121212;
+color: rgb(248, 246, 246);
+padding: 50px 0;
+margin-top: -25%;
+width: 173.5%;
+}
+.footer-logo img {
+max-width: 150px;
+margin-top: -7%;
+margin-left: -70%;
+}
+.footer-area h4 {
+font-size: 20px;
+margin-bottom: 20px;
+}
+.footer-area ul {
+list-style: none;
+padding: 0%;  
+}
+.footer-area ul li {
+margin-bottom: 10px;
+margin-left: -5%;
+margin-right: 30%; 
+display: flex;
+flex-direction: column;
+margin-left: 30%;
+}
+.footer-area ul li a {
+color: rgb(180, 180, 180);
+text-decoration: none;
+font-size: 16px;
+transition: color 0.3s;
+
+}
+.instagram-feed img {
+width: 70px;
+height: 70px;
+margin: 5px;
+border-radius: 5px;
+margin-left: 10%;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+gap: 1%;
+}
+
+}
+
+  
 
 
